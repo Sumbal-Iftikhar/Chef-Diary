@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="back">
+        <!-- Header Section Start -->
+        <header>
+            <nav>
+                <!-- Logo Section Start -->
+                <div class="logo">
+                    <img src="book.png" alt="Chef Diary Logo" id="logo-image">
+                    <h1 id="diary">Chef Diary</h1>
+                </div>
+                <!-- Logo Section End -->
+
+                <!-- Navigation Menu Start -->
+                <ul>
+                    <li id="homeBtn"><button id="Middle Eastern" onclick="showrecipies(id)">Home</button></li>
+                    <li id="Btn1"><button id="asian" onclick="showrecipies(id)">Asian</button></li>
+                    <li id="Btn2"><button id="Italian" onclick="showrecipies(id)">Italian</button></li>
+                    <li id="Btn3"><button id="chinese" onclick="showrecipies(id)">Chinese</button></li>
+                    <li id="Btn4"><button id="japanese" onclick="showrecipies(id)">Japanese</button></li>
+                    <li id="Btn5"><button id="African" onclick="showrecipies(id)">African</button></li>
+                    <li id="Btn6"><button id="French" onclick="showrecipies(id)">French</button></li>
+                    <li id="Btn8"><button id="Korean" onclick="showrecipies(id)">Korean</button></li>
+                    <li id="Btn9"><button id="Indian" onclick="showrecipies(id)">Indian</button></li>
+                </ul>
+                <!-- Navigation Menu End -->
+
+                <!-- Search Bar Section Start -->
+                <div class="search-container">
+                    <input id="searchbar" type="text" placeholder="Search...">
+                    <button id="searchbtn" type="submit">Search</button>
+                </div>
+                <!-- Search Bar Section End -->
+            </nav>
+        </header>
+        <!-- Header Section End -->
+
+        <!-- Main Content Section Start -->
+        <main>
+            <!-- Welcome Content Section Start -->
+            <div id="remove">
+                <div class="main-content">
+                    <div id="content">
+                        <h2>Welcome to the <br>Recipe Finder!</h2>
+                        <p id="paragraph">Find delicious recipes based <br>on your favorite ingredients or cuisine.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Welcome Content Section End -->
+
+            <!-- Search Section Start -->
+            <div id="search-section" class="hidden-section">
+               
+                <div id="recipe-list"></div>
+                <div id="recipe-details" class="hidden"></div>
+            </div>
+            <!-- Search Section End -->
+        </main>
+        <!-- Main Content Section End -->
+    </div>
+
+    <!-- Cardbox Section Start -->
+    <div class="cardbox" id="cardbox"></div>
+    <!-- Cardbox Section End -->
+
+    <!-- Recipes Section Start -->
+    <div class="recipes" id="recipes"></div>
+    <!-- Recipes Section End -->
+
+    <script src="scrpt.js"></script>
+</body>
+</html>
